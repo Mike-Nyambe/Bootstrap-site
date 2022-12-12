@@ -7,7 +7,13 @@
   --body: #222;
   --border: rgba(0, 0, 0, 0.08);
   --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  --margin-bottom-util-medium: 5rem;
 }
+/* util classes */
+.margin-medium {
+  margin-top: var(--margin-bottom-util-medium);
+}
+/* ------------- */
 
 body {
   font-family: "Barlow", sans-serif;
@@ -127,57 +133,9 @@ section {
 }
 
 /* navbar */
-
-.top-nav {
-  background-color: var(--brand);
-  color: #fff;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.top-nav a {
-  display: inline-block;
-  margin-bottom: 0;
-  margin-right: 10px;
-  text-decoration: none;
-  color: #fff;
-  transition: all 0.4s ease;
-}
-
-.top-nav a:hover {
-  color: var(--bluish);
-}
-
-.top-nav span,
-.top-nav i {
-  vertical-align: middle;
-}
-
-.top-nav i {
-  margin-top: -2.3px;
-}
-
 .navbar {
-  box-shadow: var(--shadow);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
-.social-icons a {
-  width: 28px;
-  height: 28px;
-  display: inline-flex;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.25);
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-}
-
-.social-icons a:hover {
-  background-color: #fff;
-  color: var(--brand);
-}
-
 .navbar .navbar-nav .nav-link {
   color: var(--dark);
 }
@@ -221,6 +179,9 @@ section {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
+.content-card-top:not(last-child) {
+  margin-bottom: 1rem;
+}
 
 .content-card-top h4 {
   font-size: 18px;
@@ -238,7 +199,15 @@ section {
   width: 25px;
 }
 
-#milestone {
+/* about us css */
+.about-logo-main {
+  height: 21rem;
+}
+.about-log-side-lower {
+  margin-top: 4rem;
+}
+
+#chooseUs {
   background: linear-gradient(rgba(5, 57, 107, 0.87), rgba(5, 57, 107, 0.87)),
     url(../img/bg_banner1.jpg);
   background-size: cover;
@@ -246,8 +215,8 @@ section {
   background-repeat: no-repeat;
 }
 
-#milestone h1,
-#milestone p {
+#chooseUs h1,
+#chooseUs p {
   color: #fff;
 }
 
@@ -267,6 +236,27 @@ section {
   width: 90px;
 }
 
+/* -----why choose us section */
+
+.why-choose-us {
+  padding: 2rem;
+  background: #053a6b9b;
+  border-radius: 5px;
+  color: #fff;
+}
+.why-choose-us .why-choose-item {
+  list-style: none;
+  margin-left: -2px !important;
+}
+.why-choose-lists box-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  vertical-align: middle;
+}
+.values {
+  padding: 2rem;
+}
+/*-----end of why choose us------ */
 .packages {
   padding: 32px;
   background-color: #fff;
@@ -274,6 +264,7 @@ section {
   border-radius: 5px;
   transition: all 0.8s;
   cursor: pointer;
+  height: 100%;
 }
 
 .packages:hover {
@@ -487,38 +478,6 @@ section {
 
 .review .stars {
   color: var(--brand);
-}
-
-.blog-post {
-  position: relative;
-  background-color: #fff;
-  box-shadow: var(--shadow);
-}
-
-.blog-post .content {
-  padding: 32px;
-}
-
-.blog-post a {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: var(--brand);
-  padding: 2px 12px;
-  border-radius: 100px;
-  text-decoration: none;
-  color: #fff;
-}
-
-.blog-post h5 {
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
-.blog-post small {
-  text-transform: uppercase;
-  color: var(--brand);
-  text-decoration: underline;
 }
 
 footer {
