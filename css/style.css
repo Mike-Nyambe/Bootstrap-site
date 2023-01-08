@@ -200,11 +200,13 @@ section {
 }
 
 /* about us css */
-.about-logo-main {
-  height: 21rem;
-}
-.about-log-side-lower {
-  margin-top: 4rem;
+.about-social-icons {
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #05396b;
+  padding: 4px;
+  color: #fff;
+  border-radius: 3px;
 }
 
 #chooseUs {
