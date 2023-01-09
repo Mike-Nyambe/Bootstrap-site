@@ -200,15 +200,17 @@ section {
 }
 
 /* about us css */
-.about-social-icons {
+.about-links a {
   text-decoration: none;
-  text-transform: capitalize;
   background-color: #05396b;
-  padding: 4px;
+  padding: 10px;
   color: #fff;
-  border-radius: 3px;
+  text-transform: capitalize;
 }
-
+.about-links a:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 12px;
+}
 #chooseUs {
   background: linear-gradient(rgba(5, 57, 107, 0.87), rgba(5, 57, 107, 0.87)),
     url(../img/bg_banner1.jpg);
