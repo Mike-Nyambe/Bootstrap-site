@@ -56,12 +56,83 @@ a:hover {
 }
 
 section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .text-brand {
   color: var(--brand) !important;
+}
+
+/* navbar */
+.top-nav {
+  background-color: var(--secondary);
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.top-nav p {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.top-nav span,
+.top-nav i {
+  vertical-align: middle;
+}
+
+.social-icons a {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.25);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.social-icons a:hover {
+  background-color: #fff;
+  color: var(--brand);
+}
+/* navbar */
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: var(--brand);
+}
+
+.navbar-brand img {
+  height: 3.5rem;
+}
+
+.btn {
+  padding: 8px 26px;
+}
+
+.btn-brand {
+  border-color: var(--brand);
+  background-color: var(--brand);
+  color: #fff;
+}
+
+.btn-brand:hover {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--dark);
 }
 
 .hero-slider .owl-prev,
@@ -132,52 +203,19 @@ section {
   color: #fff;
 }
 
-/* navbar */
-.navbar {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-.navbar .navbar-nav .nav-link {
-  color: var(--dark);
-}
-
-.navbar .navbar-nav .nav-link:hover {
-  color: var(--brand);
-}
-
-.navbar .navbar-nav .nav-link.active {
-  color: var(--brand);
-}
-
-.navbar-brand img {
-  height: 3.5rem;
-}
-
-.btn {
-  padding: 8px 26px;
-}
-
-.btn-brand {
-  border-color: var(--brand);
-  background-color: var(--brand);
-  color: #fff;
-}
-
-.btn-brand:hover {
-  background-color: var(--secondary);
-  border-color: var(--secondary);
-  color: var(--dark);
-}
-
-/* .walk__through {
-    margin-top: -20px;
-} */
-
 .content-card-top {
-  background-color: #fff;
   height: 100%;
   padding: 1rem;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.card-orange {
+  background-color: var(--secondary);
+  color: #fff;
+}
+.card-blue {
+  background-color: var(--brand);
+  color: #fff;
 }
 .content-card-top:not(last-child) {
   margin-bottom: 1rem;
@@ -187,6 +225,7 @@ section {
   font-size: 18px;
   padding: 1px 0;
   text-transform: capitalize;
+  color: #fff;
 }
 
 .content-card-top p {
@@ -197,23 +236,35 @@ section {
 .content-card-top box-icon {
   height: 25px;
   width: 25px;
+  fill: #fff;
 }
-
-/* about us css */
-.about-links a {
-  text-decoration: none;
-  background-color: #05396b;
-  padding: 10px;
-  color: #fff;
-  text-transform: capitalize;
+/*  home page about us css */
+.main-aboutus {
+  background: linear-gradient(#010101cb, #010101cb), url(../img/whychooseus.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.about-links a:hover {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 12px;
+/* main page about us css */
+.values-card {
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  padding: 20px;
+  height: 100%;
 }
+.icon-contain {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--bluish);
+}
+.icooon box-icon {
+  fill: #fff;
+}
+/* why choose us */
 #chooseUs {
-  background: linear-gradient(rgba(5, 57, 107, 0.87), rgba(5, 57, 107, 0.87)),
-    url(../img/bg_banner1.jpg);
+  background: linear-gradient(to right, #c1c8ca 60%, rgba(255, 255, 255, 0)),
+    url(../img/whychooseus.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
