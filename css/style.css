@@ -280,6 +280,7 @@ section {
   background-color: #fff;
   box-shadow: var(--shadow);
   border-radius: 5px;
+  height: 100%;
 }
 
 .service h5 {
