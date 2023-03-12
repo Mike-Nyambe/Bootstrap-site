@@ -99,6 +99,9 @@ section {
   background-color: #fff;
   color: var(--brand);
 }
+.acco-btnn {
+  font-weight: 600;
+}
 /* navbar */
 .navbar {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -184,7 +187,7 @@ section {
 
 .slide1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/bg1.jpeg);
+    url(../img/sliderrr.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -244,6 +247,7 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 60vh;
 }
 /* main page about us css */
 .values-card {
@@ -280,7 +284,8 @@ section {
 
 /* company profile */
 .c-profile-section {
-  background: linear-gradient(#010101cb, #010101cb), url(../img/whychooseus.jpg);
+  background: linear-gradient(#010101cb, #010101cb),
+    url(../img/companyprofile.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -397,6 +402,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 2;
+  height: 30rem;
 }
 
 .project h6 {
